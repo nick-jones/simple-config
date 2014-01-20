@@ -13,15 +13,15 @@ Values and factories can be provided in the constructor:
 
 ```php
 $container = new \SimpleConfig\Container(
-	[
-		'field1' => 'value',
-		// etc
-	],
-	[
-		'field2' => function() {
-			return new Foo();
-		}
-	]
+    [
+        'field1' => 'value',
+        // etc
+    ],
+    [
+        'field2' => function() {
+            return new Foo();
+        }
+    ]
 );
 ```
 
@@ -38,7 +38,7 @@ can retrieve other values from the container by simply utilising `$this`, e.g.
 
 ```php
 $container->factory('foo', function() {
-	$class = $this['foo.class'];
-	return new $class();
+    $class = $this['foo.class'];
+    return new $class();
 });
 ```

@@ -1,14 +1,24 @@
 {
-    "name": "nick-jones/SimpleConfig",
+    "name": "nick-jones/simpleconfig",
+
+    "description": "A basic configuration container class",
+
+    "keywords": ["config", "configuration", "container"],
+
     "authors": [{
         "name": "Nicholas Jones"
     }],
+
+    "license": "MIT",
+
     "require": {
         "php": ">=5.4"
     },
+
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
     },
+
     "autoload": {
         "psr-0": {
             "SimpleConfig": "lib/"
